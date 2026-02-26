@@ -3,6 +3,19 @@
 // Run this file with the node command:
 // node tipCalculator.js
 
-let bill = 100
-let tipPercentage = 0.20
-let numGuests = 4
+let bill = 100;
+let tipPercentage = 0.20;
+let numGuests = 4;
+
+
+// calculate tip amount...
+let tipAmount = bill * tipPercentage;
+console.log("Tip Amount", tipAmount)
+
+// calculate total bill..
+let totalBill = bill + tipAmount;
+console.log("Total Bill", totalBill);
+
+// calculate total for each person..
+let amountOwedPerGuest = totalBill / numGuests;
+console.log("Total owed per guest", amountOwedPerGuest);
